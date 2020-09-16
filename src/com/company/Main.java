@@ -63,8 +63,6 @@ public class Main {
                     str + " is " + capitals.getProperty(str) + ".");
         }
         System.out.println();
-
-
         // look for state not in list -- specify default
         str = capitals.getProperty("Florida", "Not Found");
         System.out.println("The capital of Florida is "
