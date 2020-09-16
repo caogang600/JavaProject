@@ -1,8 +1,8 @@
 package com.company.threadDemo;
 
 public class Producer extends Thread{
-    private CubbyHole cubbyhole;
-    private int number;
+    private final CubbyHole cubbyhole;
+    private final int number;
 
     public Producer(CubbyHole c, int number) {
         cubbyhole = c;
