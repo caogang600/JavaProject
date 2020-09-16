@@ -23,5 +23,12 @@ public class TwoThreadAlive extends Thread {
         System.out.println("The end of main(), tt.isAlive()=" + tt.isAlive());
     }
     public static void main(String[] args) {
+//        TwoThreadAlive tha = new TwoThreadAlive();
+//        tha.printMsg();
+//        tha.testThreadT();
+        String power_unid="test";
+        String lawCondition="power_unid ='"+power_unid+"'";
+        System.out.println(lawCondition);
+        String width="test";
     }
 }

@@ -11,17 +11,16 @@ import java.io.IOException;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.rmi.UnknownHostException;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args)  throws Exception{
         //集合相关
         CollectionDemo collection = new CollectionDemo();
-//        collection.runCollection();
+        collection.runCollection();
         //网络实例
-        NetworkDemo network = new NetworkImpl();
+//        NetworkDemo network = new NetworkImpl();
 //        network.getHostIp();
 //       network.getHostNewIp();
 //       network.getFileSize();
@@ -39,8 +38,36 @@ public class Main {
         //数据结构
 //        DataAdd add = new DataAdd();
 //        add.addData();
-        DataListDemo dld = new DataListDemo();
-        dld.operationListDatasource();
+//        DataListDemo dld = new DataListDemo();
+//        dld.operationListDatasource();
+
+//        Main main = new Main();
+//        main.propertiesDemo();
+    }
+
+    private void  propertiesDemo(){
+        Properties capitals = new Properties();
+        Set states;
+        String str;
+        capitals.put("Illinois", "Springfield");
+        capitals.put("Missouri", "Jefferson City");
+        capitals.put("Washington", "Olympia");
+        capitals.put("California", "Sacramento");
+        capitals.put("Indiana", "Indianapolis");
+        // Show all states and capitals in hashtable.
+        states = capitals.keySet(); // get set-view of keys
+        Iterator itr = states.iterator();
+        while(itr.hasNext()) {
+            str = (String) itr.next();
+            System.out.println("The capital of " +
+                    str + " is " + capitals.getProperty(str) + ".");
+        }
+        System.out.println();
+
+        // look for state not in list -- specify default
+        str = capitals.getProperty("Florida", "Not Found");
+        System.out.println("The capital of Florida is "
+                + str + ".");
     }
 
     private void pcCubbyhole (){

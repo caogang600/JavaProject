@@ -13,4 +13,8 @@ public class DataAdd {
         while (i <= limit);
         System.out.println(sum);
     }
+    public static void  main (String[] args){
+        DataAdd add = new DataAdd();
+        add.addData();
+    }
 }
