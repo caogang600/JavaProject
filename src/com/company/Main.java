@@ -17,8 +17,6 @@ public class Main {
 
     public static void main(String[] args)  throws Exception{
         //集合相关
-        //测试一下
-        //测试一下啊
 //        CollectionDemo collection = new CollectionDemo();
 //        collection.runCollection();
         //网络实例
