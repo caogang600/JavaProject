@@ -17,6 +17,7 @@ public class Main {
 
     public static void main(String[] args)  throws Exception{
         //集合相关
+        System.out.println("测试git提交内容变更");
 //        CollectionDemo collection = new CollectionDemo();
 //        collection.runCollection();
         //网络实例
