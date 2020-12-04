@@ -4,6 +4,7 @@ import java.sql.*;
 
 public class DBconn {
     static String url = "jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true"; // 数据库连接url
+//    static String url = "jdbc:mysql://localhost:3306/fds_core??characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true";
     static String username = "root"; // 数据库用户名
     static String password = "123456"; // 用户密码
     static Connection conn = null; // 初始化一个数据连接 conn
@@ -12,6 +13,7 @@ public class DBconn {
     public static void init(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
+//            Class.forName("org.gjt.mm.mysql.Driver");
             conn = DriverManager.getConnection(url,username,password);
         } catch (Exception e) {
             System.out.println("init [SQL驱动程序初始化失败！]");

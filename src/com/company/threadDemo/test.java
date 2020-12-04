@@ -4,159 +4,215 @@ import java.util.Arrays;
 
 public class test {
     public static void main(String[] args) {
-        String str1 = "{\"_form\":{\"matterPropertyUpdateTimeDesc\":\"事项属性本身的更新时间，key为属性id，value为更新时间\"," +
-                "\"matterPropertyUpdateTime\":{\"self.FRSFZ\":\"2020-08-14 16:54:41\",\"self.FRDZYX\":\"2020-08-14 " +
-                "16:58:13\",\"self.WJWJBR\":\"2020-08-14 16:54:49\",\"self.JBRSJH73\":\"2020-08-14 16:56:27\",\"self" +
-                ".LXRDH\":\"2020-08-14 16:57:47\",\"self.TYSHXYDM\":\"2020-08-14 16:54:06\",\"self" +
-                ".FRWYBS\":\"2020-08-14 17:09:01\",\"self.JBRSFZH\":\"2020-08-14 16:56:12\",\"self" +
-                ".LXRSJHM\":\"2020-08-14 16:57:13\",\"self.FDDBRXM\":\"2020-08-14 16:54:30\",\"self" +
-                ".YZBM01\":\"2020-08-14 16:58:25\",\"self.QYMC\":\"2020-08-14 16:53:46\",\"self.BZ75\":\"2020-08-14 " +
-                "17:08:13\",\"self.SPSXMC14\":\"2020-08-14 17:08:26\",\"self.CZHM\":\"2020-08-14 16:58:01\",\"self" +
-                ".QYTXDZ\":\"2020-08-14 16:58:37\",\"self.LXRXM\":\"2020-08-14 16:56:40\",\"self" +
-                ".LXRSFZ\":\"2020-08-14 16:57:35\",\"self.JBRLXDH\":\"2020-08-14 16:55:58\",\"self" +
-                ".SFKD\":\"2020-08-14 16:59:03\",\"self.KDDZ\":\"2020-08-14 16:59:03\",\"self.XMMC50\":\"2020-08-14 " +
-                "17:04:12\"},\"cardPropertyFeature\":{},\"propertyTemplate\":{},\"mergedTemplateCode\":{}}," +
-                "\"schemaType\":\"superform\",\"schemaVersion\":\"1.0\",\"request\":[{\"requestId\":\"getFg2\"," +
-                "\"action\":\"/form/commonAsyncDatashare\",\"params\":{\"companyName\":\"${self.QYMC}.value\"," +
-                "\"bizCode\":\"${self.TYSHXYDM}.value\",\"registerNo\":\"\",\"entType\":\"\",\"additional\":\"\"}," +
-                "\"type\":\"POST\",\"self.QYMC\":{\"value\":\"\"},\"self.TYSHXYDM\":{\"value\":\"\"},\"self" +
-                ".FDDBRXM\":{\"value\":\"${res}.legalPersonName\"},\"self.FRSFZ\":{\"value\":\"${res}" +
-                ".legalPersonPaperNo\"},\"self.LXRXM\":{\"value\":\"${res}.liaisonInfo_name\"},\"self" +
-                ".YZBM01\":{\"value\":\"${res}.postalcode\"},\"self.QYTXDZ\":{\"value\":\"${res}.companyAddr\"}," +
-                "\"self.LXRDH\":{\"value\":\"${res}.liaisonInfo_tel\"}}],\"pages\":[{\"id\":\"PAGE_101102344\"," +
-                "\"layout\":{\"componentName\":\"Root\",\"id\":\"root\",\"props\":{\"flexible\":false," +
-                "\"mode\":\"normal\",\"containerStyle\":{},\"pageStyle\":{\"backgroundColor\":\"#fff\"}}," +
+        String str1 = "{\"matterPropertyUpdateTimeDesc\":\"事项属性本身的更新时间，key为属性id，value为更新时间\"," +
+                "\"matterPropertyUpdateTime\":{\"self.FRSFZ\":\"2020-08-24 16:38:28\",\"self" +
+                ".FDDBR\":\"2020-08-24 16:38:30\",\"self.LXRDH\":\"2020-11-26 16:11:09\",\"self" +
+                ".TYSHXYDM\":\"2020-08-24 16:38:30\",\"self.JJLX_WH\":\"2020-11-26 15:49:00\",\"self" +
+                ".ZCZJ_WH\":\"2020-11-26 15:49:10\",\"ZYCYRYXX_WH#ZYCYRYDJZW_WH\":\"2020-05-22 " +
+                "10:05:27\",\"self.GSDJJG\":\"2020-11-26 16:14:21\",\"self.QYTXDZ\":\"2020-11-26 " +
+                "15:49:00\",\"self.SBDW\":\"2020-08-24 16:38:28\",\"self.LXRXM\":\"2020-08-24 " +
+                "16:38:30\",\"ZYCYRYXX_WH#ZYCYRYDJXB_WH\":\"2020-05-22 10:05:27\"," +
+                "\"ZYCYRYXX_WH#ZYCYRYDJ_YCJJZGZSH_WH\":\"2020-05-22 10:05:27\",\"self" +
+                ".ZYCYRYXX_WH\":\"2020-11-26 16:29:48\",\"ZYCYRYXX_WH#ZYCYRYDJXM_WH\":\"2020-05-22 " +
+                "10:05:27\",\"ZYCYRYXX_WH#ZYCYRYDJSFZH_WH\":\"2020-05-22 10:05:27\",\"self" +
+                ".YYQX43\":\"2020-11-26 16:33:35\"},\"cardPropertyFeature\":{\"self" +
+                ".ZYCYRYXX_WH\":{\"ZYCYRYDJZW_WH\":\"isUniqueIndex:false\"," +
+                "\"ZYCYRYDJSFZH_WH\":\"isUniqueIndex:false\"," +
+                "\"ZYCYRYDJXB_WH\":\"isUniqueIndex:false\",\"ZYCYRYDJXM_WH\":\"isUniqueIndex:false\"," +
+                "\"ZYCYRYDJ_YCJJZGZSH_WH\":\"isUniqueIndex:false\"}},\"mergedTemplateCode\":{}}," +
+                "\"schemaType\":\"superform\",\"schemaVersion\":\"1.0\"," +
+                "\"request\":[{\"requestId\":\"enterpriseInfo\"," +
+                "\"action\":\"/form/commonAsyncDatashare\",\"event\":\"\"," +
+                "\"params\":{\"entityCode\":\"enterpriseInfo\",\"entType\":\"E\"," +
+                "\"bizCode\":\"${self.TYSHXYDM}.value\",\"key_bizCode\":\"self.TYSHXYDM\"," +
+                "\"desensitizeConfig\":\"self.FDDBR=legalPersonName;self.FRSFZ=legalPersonPaperNo\"}," +
+                "\"type\":\"POST\",\"target\":{\"self" +
+                ".FDDBR\":{\"props\":{\"value\":\"${res}.legalPersonName\",\"behavior\":\"${res}" +
+                ".legalPersonName ==\\'\\' ? {\\'fieldBehavior\\': \\'NORMAL\\'} : {\\'fieldBehavior\\': " +
+                "\\'DISABLED\\'} \"}},\"self.FRSFZ\":{\"props\":{\"value\":\"${res}" +
+                ".legalPersonPaperNo\",\"behavior\":\"${res}.legalPersonPaperNo ==\\'\\' ? " +
+                "{\\'fieldBehavior\\': \\'NORMAL\\'} : {\\'fieldBehavior\\': \\'DISABLED\\'} \"}},\"self" +
+                ".QYTXDZ\":{\"props\":{\"value\":\"${res}.companyAddr\"}}}}],\"rules\":[]," +
+                "\"pages\":[{\"id\":\"PAGE_101100720\"," +
+                "\"layout\":{\"componentName\":\"Root\",\"id\":\"root\"," +
+                "\"props\":{\"flexible\":false,\"mode\":\"normal\",\"containerStyle\":{}," +
+                "\"pageStyle\":{\"backgroundColor\":\"#f2f2f2\"}}," +
                 "\"children\":[{\"componentName\":\"GroupLayout\",\"id\":\"node_jzdiukfw\"," +
-                "\"props\":{\"fieldId\":\"group_jzdkd9yz\",\"fieldId$$2\":\"group_jzdkd9yz\"," +
-                "\"title\":{\"type\":\"i18n\",\"use\":null,\"en_US\":\"Group\",\"zh_CN\":\"分组\"}," +
-                "\"subTitle\":{\"type\":\"i18n\",\"use\":null,\"en_US\":null,\"zh_CN\":\"\"}," +
-                "\"description\":{\"type\":\"i18n\",\"use\":null,\"en_US\":null,\"zh_CN\":\"\"},\"visible\":true," +
-                "\"hideOnNav\":false},\"children\":[]},{\"componentName\":\"Input\",\"id\":\"self_SPSXMC14_view_id\"," +
-                "\"props\":{\"_type\":\"string\",\"info\":\"\",\"fieldId\":\"self.SPSXMC14\",\"label\":\"审批事项名称\"," +
-                "\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\"," +
-                "\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\",\"size\":\"large\"," +
-                "\"gridLayout\":\"[]\",\"readonly\":false,\"visible\":true,\"inputType\":false," +
-                "\"validation\":[{\"type\":\"required\",\"param\":\"\",\"message\":\"当前字段不能为空\"}]," +
-                "\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}},{\"componentName\":\"Textarea\"," +
-                "\"id\":\"self_XMMC50_view_id\",\"props\":{\"group\":\"\",\"_type\":\"string\",\"info\":\"\"," +
-                "\"fieldId\":\"self.XMMC50\",\"label\":\"项目名称\",\"showLabel\":true,\"placeholder\":\"请输入\"," +
-                "\"tips\":\"\",\"style\":{\"maxWidth\":\"446px\"},\"maxHeight\":120,\"layout\":\"HORIZONTAL\"," +
-                "\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false,\"disabled\":false,\"visible\":true," +
-                "\"autoTrim\":false,\"showCounter\":false,\"validation\":[],\"visibility\":[\"PC\",\"MOBILE\"]," +
-                "\"_validation\":[]}},{\"componentName\":\"Input\",\"id\":\"self_QYMC_view_id\"," +
-                "\"props\":{\"_type\":\"string\",\"info\":\"\",\"_vaildation\":[],\"fieldId\":\"self.QYMC\"," +
-                "\"label\":\"企业名称\",\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\"," +
-                "\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\",\"size\":\"large\"," +
-                "\"gridLayout\":\"[]\",\"readonly\":false,\"visible\":true,\"inputType\":false," +
-                "\"validation\":[{\"type\":\"required\",\"param\":\"\",\"message\":\"当前字段不能为空\"}]," +
-                "\"visibility\":[\"PC\",\"MOBILE\"]}},{\"componentName\":\"Input\",\"id\":\"self_TYSHXYDM_view_id\"," +
-                "\"props\":{\"_type\":\"string\",\"info\":\"\",\"fieldId\":\"self.TYSHXYDM\",\"label\":\"统一社会信用代码\"," +
-                "\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\"," +
-                "\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\",\"size\":\"large\"," +
-                "\"gridLayout\":\"[]\",\"readonly\":false,\"visible\":true,\"inputType\":false," +
-                "\"validation\":[{\"type\":\"required\",\"param\":\"\",\"message\":\"当前字段不能为空\"}]," +
-                "\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}},{\"componentName\":\"Input\"," +
-                "\"id\":\"self_FDDBRXM_view_id\",\"props\":{\"_type\":\"string\",\"info\":\"\",\"fieldId\":\"self" +
-                ".FDDBRXM\",\"label\":\"法定代表人姓名\",\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\"," +
-                "\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\"," +
-                "\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false,\"visible\":true,\"inputType\":false," +
-                "\"validation\":[{\"type\":\"required\",\"param\":\"\",\"message\":\"当前字段不能为空\"}]," +
-                "\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}},{\"componentName\":\"Input\"," +
-                "\"id\":\"self_FRSFZ_view_id\",\"props\":{\"_type\":\"string\",\"info\":\"\",\"fieldId\":\"self" +
-                ".FRSFZ\",\"label\":\"法人身份证\",\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\"," +
-                "\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\"," +
-                "\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false,\"visible\":true,\"inputType\":false," +
-                "\"validation\":[{\"type\":\"required\",\"param\":\"\",\"message\":\"当前字段不能为空\"}]," +
-                "\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}},{\"componentName\":\"Input\"," +
-                "\"id\":\"self_WJWJBR_view_id\",\"props\":{\"_type\":\"string\",\"info\":\"\",\"fieldId\":\"self" +
-                ".WJWJBR\",\"label\":\"经办人\",\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\"," +
-                "\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\"," +
-                "\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false,\"visible\":true,\"inputType\":false," +
-                "\"validation\":[],\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}}," +
-                "{\"componentName\":\"Input\",\"id\":\"self_JBRLXDH_view_id\",\"props\":{\"_type\":\"string\"," +
-                "\"info\":\"\",\"fieldId\":\"self.JBRLXDH\",\"label\":\"经办人联系电话\",\"showLabel\":true," +
-                "\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
-                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false," +
-                "\"visible\":true,\"inputType\":false,\"validation\":[],\"visibility\":[\"PC\",\"MOBILE\"]," +
-                "\"_validation\":[]}},{\"componentName\":\"Input\",\"id\":\"self_JBRSFZH_view_id\"," +
-                "\"props\":{\"_type\":\"string\",\"info\":\"\",\"fieldId\":\"self.JBRSFZH\",\"label\":\"经办人身份证号\"," +
-                "\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\"," +
-                "\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\",\"size\":\"large\"," +
-                "\"gridLayout\":\"[]\",\"readonly\":false,\"visible\":true,\"inputType\":false,\"validation\":[]," +
-                "\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}},{\"componentName\":\"Input\"," +
-                "\"id\":\"self_JBRSJH73_view_id\",\"props\":{\"_type\":\"string\",\"info\":\"\",\"fieldId\":\"self" +
-                ".JBRSJH73\",\"label\":\"经办人手机号\",\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\"," +
-                "\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\"," +
-                "\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false,\"visible\":true,\"inputType\":false," +
-                "\"validation\":[],\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}}," +
-                "{\"componentName\":\"Input\",\"id\":\"self_LXRXM_view_id\",\"props\":{\"_type\":\"string\"," +
-                "\"info\":\"\",\"fieldId\":\"self.LXRXM\",\"label\":\"联系人姓名\",\"showLabel\":true," +
-                "\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
-                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false," +
-                "\"visible\":true,\"inputType\":false,\"validation\":[{\"type\":\"required\",\"param\":\"\"," +
-                "\"message\":\"当前字段不能为空\"}],\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}}," +
-                "{\"componentName\":\"Input\",\"id\":\"self_LXRSJHM_view_id\",\"props\":{\"_type\":\"string\"," +
-                "\"info\":\"\",\"fieldId\":\"self.LXRSJHM\",\"label\":\"联系人手机号码\",\"showLabel\":true," +
-                "\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
-                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false," +
-                "\"visible\":true,\"inputType\":false,\"validation\":[{\"type\":\"required\",\"param\":\"\"," +
-                "\"message\":\"当前字段不能为空\"}],\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}}," +
-                "{\"componentName\":\"Input\",\"id\":\"self_LXRSFZ_view_id\",\"props\":{\"_type\":\"string\"," +
-                "\"info\":\"\",\"fieldId\":\"self.LXRSFZ\",\"label\":\"联系人身份证\",\"showLabel\":true," +
-                "\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
-                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false," +
-                "\"visible\":true,\"inputType\":false,\"validation\":[],\"visibility\":[\"PC\",\"MOBILE\"]," +
+                "\"props\":{\"fieldId2\":\"group_jzdkd9yz\",\"fieldId\":\"group_jzdkd9yz\"," +
+                "\"fieldId$$2\":\"group_jzdkd9yz\",\"title\":{\"type\":\"i18n\",\"use\":null," +
+                "\"en_US\":\"Group\",\"zh_CN\":\"基本信息\"},\"subTitle\":{\"type\":\"i18n\"," +
+                "\"use\":null,\"en_US\":null,\"zh_CN\":\"\"}," +
+                "\"description\":{\"type\":\"i18n\",\"use\":null,\"en_US\":null," +
+                "\"zh_CN\":\"\"},\"visible\":true,\"hideOnNav\":false}," +
+                "\"children\":[{\"componentName\":\"AutoColumnsLayout\",\"id\":\"node_khylyzxe\"," +
+                "\"props\":{\"layout\":2,\"fieldId\":\"columns_khylyzxp\"}," +
+                "\"children\":[{\"componentName\":\"Input\",\"id\":\"self_SBDW_view_id\"," +
+                "\"props\":{\"_type\":\"string\",\"info\":\"\",\"fieldId2\":\"self" +
+                ".SBDW\",\"fieldId\":\"self.SBDW\",\"label\":\"申报单位\",\"showLabel\":true," +
+                "\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\"," +
+                "\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\"," +
+                "\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":true,\"visible\":true," +
+                "\"inputType\":false,\"validation\":[{\"type\":\"required\",\"param\":\"\"," +
+                "\"message\":\"当前字段不能为空\"}],\"visibility\":[\"PC\",\"MOBILE\"]," +
+                "\"_validation\":[]}},{\"componentName\":\"Input\"," +
+                "\"id\":\"self_TYSHXYDM_view_id\",\"props\":{\"_type\":\"string\"," +
+                "\"info\":\"\",\"fieldId2\":\"self.TYSHXYDM\",\"fieldId\":\"self.TYSHXYDM\"," +
+                "\"label\":\"统一社会信用代码\",\"showLabel\":true,\"placeholder\":\"请输入\"," +
+                "\"tips\":\"\",\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
+                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\"," +
+                "\"readonly\":true,\"visible\":true,\"inputType\":false," +
+                "\"validation\":[{\"type\":\"required\",\"param\":\"\"," +
+                "\"message\":\"当前字段不能为空\"}],\"visibility\":[\"PC\",\"MOBILE\"]," +
+                "\"_validation\":[]}}]},{\"componentName\":\"AutoColumnsLayout\"," +
+                "\"id\":\"node_khym02s0\",\"props\":{\"layout\":2," +
+                "\"fieldId\":\"columns_khym02s4\"},\"children\":[{\"componentName\":\"Input\"," +
+                "\"id\":\"self_JJLX_WH_view_id\",\"props\":{\"_type\":\"string\"," +
+                "\"info\":\"\",\"fieldId\":\"self.JJLX_WH\",\"label\":\"经济类型\"," +
+                "\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\"," +
+                "\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
+                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\"," +
+                "\"readonly\":false,\"visible\":true,\"inputType\":false," +
+                "\"validation\":[{\"type\":\"required\",\"param\":\"\"," +
+                "\"message\":\"当前字段不能为空\"}],\"visibility\":[\"PC\",\"MOBILE\"]," +
+                "\"_validation\":[]}},{\"componentName\":\"FloatNumber\"," +
+                "\"id\":\"self_ZCZJ_WH_view_id\",\"props\":{\"_type\":\"double\"," +
+                "\"info\":\"\",\"fieldId\":\"self.ZCZJ_WH\",\"label\":\"注册资金\"," +
+                "\"showLabel\":true,\"placeholder\":\"请输入\",\"jsxtype\":\"\"," +
+                "\"delimiter\":\"\",\"roundMode\":\"1\",\"align\":\"left\"," +
+                "\"tips\":\"\",\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
+                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\"," +
+                "\"readonly\":false,\"visible\":true,\"validation\":[{\"type\":\"required\"," +
+                "\"param\":\"\",\"message\":\"当前字段不能为空\"}],\"visibility\":[\"PC\"," +
+                "\"MOBILE\"],\"_validation\":[]}}]},{\"componentName\":\"AutoColumnsLayout\"," +
+                "\"id\":\"node_khym0w87\",\"props\":{\"layout\":2," +
+                "\"fieldId\":\"columns_khym0w88\"},\"children\":[{\"componentName\":\"Input\"," +
+                "\"id\":\"self_GSDJJG_view_id\",\"props\":{\"_type\":\"string\"," +
+                "\"info\":\"\",\"fieldId\":\"self.GSDJJG\",\"label\":\"工商注册机关\"," +
+                "\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\"," +
+                "\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
+                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\"," +
+                "\"readonly\":false,\"visible\":true,\"inputType\":false," +
+                "\"validation\":[{\"type\":\"required\",\"param\":\"\"," +
+                "\"message\":\"当前字段不能为空\"}],\"visibility\":[\"PC\",\"MOBILE\"]," +
+                "\"_validation\":[]}},{\"componentName\":\"CascadeDate\"," +
+                "\"id\":\"self_YYQX43_view_id\",\"props\":{\"group\":\"\"," +
+                "\"_type\":\"timeRange\",\"info\":\"\",\"fieldId\":\"self.YYQX43\"," +
+                "\"label\":\"营业期限\",\"showLabel\":true,\"tips\":\"\"," +
+                "\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
+                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\"," +
+                "\"readonly\":false,\"visible\":true,\"dateType\":\"yyyy-mm-dd\"," +
+                "\"autoMatchWidth\":true,\"placeholder\":{\"start\":\"开始时间\"," +
+                "\"end\":\"结束时间\"},\"selectable\":{},\"__formatIn__\":\"\"," +
+                "\"__formatOut__\":\"\",\"requireType\":\"both\"," +
+                "\"validation\":[{\"type\":\"required\",\"param\":\"\"," +
+                "\"message\":\"当前字段不能为空\"}],\"visibility\":[\"PC\",\"MOBILE\"]," +
+                "\"_validation\":[]}}]},{\"componentName\":\"AutoColumnsLayout\"," +
+                "\"id\":\"node_khym1j3w\",\"props\":{\"layout\":2," +
+                "\"fieldId\":\"columns_khym1j3z\"},\"children\":[{\"componentName\":\"Input\"," +
+                "\"id\":\"self_FDDBR_view_id\",\"props\":{\"_type\":\"string\"," +
+                "\"info\":\"\",\"_vaildation\":[],\"fieldId2\":\"self.FDDBR\"," +
+                "\"fieldId\":\"self.FDDBR\",\"label\":\"法人代表\",\"showLabel\":true," +
+                "\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\"," +
+                "\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\"," +
+                "\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":true,\"visible\":true," +
+                "\"inputType\":false,\"validation\":[{\"type\":\"required\",\"param\":\"\"," +
+                "\"message\":\"当前字段不能为空\"}],\"visibility\":[\"PC\",\"MOBILE\"]}}," +
+                "{\"componentName\":\"Input\",\"id\":\"self_FRSFZ_view_id\"," +
+                "\"props\":{\"_type\":\"string\",\"info\":\"\",\"fieldId2\":\"self" +
+                ".FRSFZ\",\"fieldId\":\"self.FRSFZ\",\"label\":\"法人代表身份证\",\"showLabel\":true," +
+                "\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\"," +
+                "\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\"," +
+                "\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":true,\"visible\":true," +
+                "\"inputType\":false,\"validation\":[{\"type\":\"required\",\"param\":\"\"," +
+                "\"message\":\"当前字段不能为空\"},{\"type\":\"idCard\"}],\"visibility\":[\"PC\"," +
+                "\"MOBILE\"],\"_validation\":[]}}]},{\"componentName\":\"AutoColumnsLayout\"," +
+                "\"id\":\"node_khym1td4\",\"props\":{\"layout\":2," +
+                "\"fieldId\":\"columns_khym1td8\"},\"children\":[{\"componentName\":\"Input\"," +
+                "\"id\":\"self_LXRXM_view_id\",\"props\":{\"_type\":\"string\"," +
+                "\"info\":\"\",\"fieldId2\":\"self.LXRXM\",\"fieldId\":\"self.LXRXM\"," +
+                "\"label\":\"联系人\",\"showLabel\":true,\"placeholder\":\"请输入\"," +
+                "\"tips\":\"\",\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
+                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\"," +
+                "\"readonly\":false,\"visible\":true,\"inputType\":false," +
+                "\"validation\":[{\"type\":\"required\",\"param\":\"\"," +
+                "\"message\":\"当前字段不能为空\"}],\"visibility\":[\"PC\",\"MOBILE\"]," +
                 "\"_validation\":[]}},{\"componentName\":\"Input\",\"id\":\"self_LXRDH_view_id\"," +
-                "\"props\":{\"_type\":\"string\",\"info\":\"\",\"fieldId\":\"self.LXRDH\",\"label\":\"联系人电话\"," +
-                "\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\"," +
-                "\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\",\"size\":\"large\"," +
-                "\"gridLayout\":\"[]\",\"readonly\":false,\"visible\":true,\"inputType\":false,\"validation\":[]," +
-                "\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}},{\"componentName\":\"Input\"," +
-                "\"id\":\"self_CZHM_view_id\",\"props\":{\"_type\":\"string\",\"info\":\"\",\"fieldId\":\"self" +
-                ".CZHM\",\"label\":\"传真号码\",\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\"," +
-                "\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\"," +
-                "\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false,\"visible\":true,\"inputType\":false," +
-                "\"validation\":[],\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}}," +
-                "{\"componentName\":\"Input\",\"id\":\"self_FRDZYX_view_id\",\"props\":{\"_type\":\"string\"," +
-                "\"info\":\"\",\"fieldId\":\"self.FRDZYX\",\"label\":\"法人电子邮箱\",\"showLabel\":true," +
-                "\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
-                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false," +
-                "\"visible\":true,\"inputType\":false,\"validation\":[],\"visibility\":[\"PC\",\"MOBILE\"]," +
-                "\"_validation\":[]}},{\"componentName\":\"Input\",\"id\":\"self_YZBM01_view_id\"," +
-                "\"props\":{\"_type\":\"string\",\"info\":\"\",\"fieldId\":\"self.YZBM01\",\"label\":\"邮政编码\"," +
-                "\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\"," +
-                "\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\",\"size\":\"large\"," +
-                "\"gridLayout\":\"[]\",\"readonly\":false,\"visible\":true,\"inputType\":false,\"validation\":[]," +
-                "\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}},{\"componentName\":\"Input\"," +
-                "\"id\":\"self_QYTXDZ_view_id\",\"props\":{\"_type\":\"string\",\"info\":\"\",\"fieldId\":\"self" +
-                ".QYTXDZ\",\"label\":\"企业通讯地址\",\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\"," +
-                "\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\"," +
-                "\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false,\"visible\":true,\"inputType\":false," +
-                "\"validation\":[{\"type\":\"required\",\"param\":\"\",\"message\":\"当前字段不能为空\"}]," +
-                "\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}},{\"componentName\":\"Radio\"," +
-                "\"id\":\"self_SFKD_view_id\",\"props\":{\"group\":\"\",\"_type\":\"enum\",\"info\":\"\"," +
-                "\"fieldId\":\"self.SFKD\",\"label\":\"是否快递\",\"showLabel\":true,\"placeholder\":\"请选择\"," +
-                "\"tips\":\"\",\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\"," +
-                "\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false,\"visible\":true," +
-                "\"displayStyle\":\"horizontal\",\"dataSource\":{\"type\":\"OPTIONS\",\"options\":[{\"text\":\"是\"," +
-                "\"value\":\"1\"},{\"text\":\"否\",\"value\":\"2\"}]},\"validation\":[],\"visibility\":[\"PC\"," +
-                "\"MOBILE\"],\"_validation\":[]}},{\"componentName\":\"Input\",\"id\":\"self_KDDZ_view_id\"," +
-                "\"props\":{\"_type\":\"string\",\"info\":\"\",\"fieldId\":\"self.KDDZ\",\"label\":\"快递地址\"," +
-                "\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\"," +
-                "\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\",\"size\":\"large\"," +
-                "\"gridLayout\":\"[]\",\"readonly\":false,\"visible\":true,\"inputType\":false,\"validation\":[]," +
-                "\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}},{\"componentName\":\"Textarea\"," +
-                "\"id\":\"self_BZ75_view_id\",\"props\":{\"group\":\"\",\"_type\":\"string\",\"info\":\"\"," +
-                "\"fieldId\":\"self.BZ75\",\"label\":\"备注\",\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\"," +
-                "\"style\":{\"maxWidth\":\"446px\"},\"maxHeight\":120,\"layout\":\"HORIZONTAL\",\"size\":\"large\"," +
-                "\"gridLayout\":\"[]\",\"readonly\":false,\"disabled\":false,\"visible\":true,\"autoTrim\":false," +
-                "\"showCounter\":false,\"validation\":[],\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}}," +
-                "{\"componentName\":\"Input\",\"id\":\"self_FRWYBS_view_id\",\"props\":{\"_type\":\"string\"," +
-                "\"info\":\"\",\"fieldId\":\"self.FRWYBS\",\"label\":\"法人唯一标识\",\"showLabel\":true," +
-                "\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
-                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false," +
-                "\"visible\":false,\"inputType\":false,\"validation\":[],\"visibility\":[\"PC\",\"MOBILE\"]," +
-                "\"_validation\":[]}}]},\"params\":{}}]}";
+                "\"props\":{\"_type\":\"string\",\"info\":\"\",\"fieldId\":\"self" +
+                ".LXRDH\",\"label\":\"联系人电话\",\"showLabel\":true,\"placeholder\":\"请输入\"," +
+                "\"tips\":\"\",\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
+                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\"," +
+                "\"readonly\":false,\"visible\":true,\"inputType\":false," +
+                "\"validation\":[{\"type\":\"required\",\"param\":\"\"," +
+                "\"message\":\"当前字段不能为空\"}],\"visibility\":[\"PC\",\"MOBILE\"]," +
+                "\"_validation\":[]}}]},{\"componentName\":\"Input\"," +
+                "\"id\":\"self_QYTXDZ_view_id\",\"props\":{\"_type\":\"string\"," +
+                "\"info\":\"\",\"fieldId2\":\"self.QYTXDZ\",\"fieldId\":\"self.QYTXDZ\"," +
+                "\"label\":\"住所\",\"showLabel\":true,\"placeholder\":\"请输入\"," +
+                "\"tips\":\"\",\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
+                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\"," +
+                "\"readonly\":false,\"visible\":true,\"inputType\":false," +
+                "\"validation\":[{\"type\":\"required\",\"param\":\"\"," +
+                "\"message\":\"当前字段不能为空\"}],\"visibility\":[\"PC\",\"MOBILE\"]," +
+                "\"_validation\":[]}}]},{\"componentName\":\"BigTable\"," +
+                "\"id\":\"self_ZYCYRYXX_WH_view_id\",\"props\":{\"_type\":\"bigTable\"," +
+                "\"layout\":\"VERTICAL\",\"gridLayout\":\"[]\",\"visibility\":[\"PC\"," +
+                "\"MOBILE\"],\"buttonName\":\"新增一条记录\",\"showIndex\":true," +
+                "\"validation\":[{\"type\":\"required\",\"param\":\"\"," +
+                "\"message\":\"当前字段不能为空\"}],\"fieldId\":\"self.ZYCYRYXX_WH\",\"label\":\"主要 从业 " +
+                "人员 登记\",\"showLabel\":true,\"placeholder\":\"请输入\",\"tips\":\"\"," +
+                "\"tipsType\":\"TILE\",\"readonly\":false,\"visible\":true," +
+                "\"style\":{\"maxWidth\":\"100%\"},\"theme\":\"split\"," +
+                "\"importMode\":\"upload\",\"rowSelector\":\"checkboxSelector\"," +
+                "\"enableEdit\":true,\"enableDelete\":true,\"showTableHead\":true," +
+                "\"showSortable\":false,\"pageSize\":10,\"enableAdd\":true," +
+                "\"genTemplateType\":\"AUTO\",\"enableSearch\":false," +
+                "\"searchColumns\":[{\"searchKey\":\"searchColumn1\"}," +
+                "{\"searchKey\":\"searchColumn2\"},{\"searchKey\":\"searchColumn3\"}]," +
+                "\"dataShareSearchFields\":[{\"label\":\"搜索关键字\"}],\"addButtonName\":\"单个增加\"," +
+                "\"editButtonName\":\"修改\",\"deleteButtonName\":\"删除\"}," +
+                "\"children\":[{\"componentName\":\"Input\"," +
+                "\"id\":\"ZYCYRYDJXM_WH_self_ZYCYRYXX_WH_view_id\"," +
+                "\"props\":{\"_type\":\"string\",\"info\":\"\"," +
+                "\"fieldId\":\"ZYCYRYDJXM_WH\",\"label\":\"姓名\",\"showLabel\":true," +
+                "\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\"," +
+                "\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\"," +
+                "\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false," +
+                "\"visible\":true,\"inputType\":false,\"validation\":[],\"visibility\":[\"PC\"," +
+                "\"MOBILE\"],\"_validation\":[]}},{\"componentName\":\"Select\"," +
+                "\"id\":\"ZYCYRYDJXB_WH_self_ZYCYRYXX_WH_view_id\",\"props\":{\"group\":\"\"," +
+                "\"_type\":\"enum\",\"info\":\"\",\"fieldId\":\"ZYCYRYDJXB_WH\"," +
+                "\"label\":\"性别\",\"showLabel\":true,\"placeholder\":\"请选择\"," +
+                "\"tips\":\"\",\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
+                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\"," +
+                "\"readonly\":false,\"visible\":true,\"hasClear\":false,\"showSearch\":false," +
+                "\"dataSource\":{\"type\":\"OPTIONS\",\"options\":[]},\"validation\":[]," +
+                "\"visibility\":[\"PC\",\"MOBILE\"],\"_validation\":[]}}," +
+                "{\"componentName\":\"Input\",\"id\":\"ZYCYRYDJZW_WH_self_ZYCYRYXX_WH_view_id\"," +
+                "\"props\":{\"_type\":\"string\",\"info\":\"\"," +
+                "\"fieldId\":\"ZYCYRYDJZW_WH\",\"label\":\"职务\",\"showLabel\":true," +
+                "\"placeholder\":\"请输入\",\"tips\":\"\",\"tipsType\":\"TILE\"," +
+                "\"style\":{\"maxWidth\":\"446px\"},\"layout\":\"HORIZONTAL\"," +
+                "\"size\":\"large\",\"gridLayout\":\"[]\",\"readonly\":false," +
+                "\"visible\":true,\"inputType\":false,\"validation\":[],\"visibility\":[\"PC\"," +
+                "\"MOBILE\"],\"_validation\":[]}},{\"componentName\":\"Number\"," +
+                "\"id\":\"ZYCYRYDJSFZH_WH_self_ZYCYRYXX_WH_view_id\"," +
+                "\"props\":{\"_type\":\"long\",\"info\":\"\"," +
+                "\"fieldId\":\"ZYCYRYDJSFZH_WH\",\"label\":\"身份证号\",\"showLabel\":true," +
+                "\"placeholder\":\"请输入\",\"jsxtype\":\"\",\"delimiter\":\"\"," +
+                "\"roundMode\":\"1\",\"align\":\"left\",\"tips\":\"\"," +
+                "\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
+                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\"," +
+                "\"readonly\":false,\"visible\":true,\"validation\":[],\"visibility\":[\"PC\"," +
+                "\"MOBILE\"],\"_validation\":[]}},{\"componentName\":\"Number\"," +
+                "\"id\":\"ZYCYRYDJ_YCJJZGZSH_WH_self_ZYCYRYXX_WH_view_id\"," +
+                "\"props\":{\"_type\":\"long\",\"info\":\"\"," +
+                "\"fieldId\":\"ZYCYRYDJ_YCJJZGZSH_WH\",\"label\":\"演出经纪资格证书号\"," +
+                "\"showLabel\":true,\"placeholder\":\"请输入\",\"jsxtype\":\"\"," +
+                "\"delimiter\":\"\",\"roundMode\":\"1\",\"align\":\"left\"," +
+                "\"tips\":\"\",\"tipsType\":\"TILE\",\"style\":{\"maxWidth\":\"446px\"}," +
+                "\"layout\":\"HORIZONTAL\",\"size\":\"large\",\"gridLayout\":\"[]\"," +
+                "\"readonly\":false,\"visible\":true,\"validation\":[],\"visibility\":[\"PC\"," +
+                "\"MOBILE\"],\"_validation\":[]}}]}]},\"params\":{}}]}";
         str1 = str1.replaceAll("\",\"label\":\"","&\"");
         str1 = str1.replaceAll("\"fieldId\":\"","&");
         str1 = str1.replaceAll(",\"showLabel\"","&");

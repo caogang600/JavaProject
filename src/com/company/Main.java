@@ -20,7 +20,7 @@ public class Main {
 //        CollectionDemo collection = new CollectionDemo();
 //        collection.runCollection();
         //网络实例
-//        NetworkDemo network = new NetworkImpl();
+        NetworkDemo network = new NetworkImpl();
 //        network.getHostIp();
 //       network.getHostNewIp();
 //       network.getFileSize();
@@ -32,9 +32,9 @@ public class Main {
 //        TwoThreadAlive tta = new TwoThreadAlive();
 //        tta.testThreadT();
 //
-        Main main = new Main();
-        main.testListenerTd();
-        main.pcCubbyhole();
+//        Main main = new Main();
+//        main.testListenerTd();
+//        main.pcCubbyhole();
         //数据结构
 //        DataAdd add = new DataAdd();
 //        add.addData();
