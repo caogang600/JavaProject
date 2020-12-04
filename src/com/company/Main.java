@@ -16,6 +16,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args)  throws Exception{
+        //
         //集合相关
 //        CollectionDemo collection = new CollectionDemo();
 //        collection.runCollection();
