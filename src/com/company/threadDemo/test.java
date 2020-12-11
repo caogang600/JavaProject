@@ -4,22 +4,25 @@ import java.util.Arrays;
 
 public class test {
     public static void main(String[] args) {
-        String str1 = "{\"matterPropertyUpdateTimeDesc\":\"事项属性本身的更新时间，key为属性id，value为更新时间\"," +
-                "\"matterPropertyUpdateTime\":{\"self.FRSFZ\":\"2020-08-24 16:38:28\",\"self" +
-                ".FDDBR\":\"2020-08-24 16:38:30\",\"self.LXRDH\":\"2020-11-26 16:11:09\",\"self" +
-                ".TYSHXYDM\":\"2020-08-24 16:38:30\",\"self.JJLX_WH\":\"2020-11-26 15:49:00\",\"self" +
-                ".ZCZJ_WH\":\"2020-11-26 15:49:10\",\"ZYCYRYXX_WH#ZYCYRYDJZW_WH\":\"2020-05-22 " +
-                "10:05:27\",\"self.GSDJJG\":\"2020-11-26 16:14:21\",\"self.QYTXDZ\":\"2020-11-26 " +
-                "15:49:00\",\"self.SBDW\":\"2020-08-24 16:38:28\",\"self.LXRXM\":\"2020-08-24 " +
-                "16:38:30\",\"ZYCYRYXX_WH#ZYCYRYDJXB_WH\":\"2020-05-22 10:05:27\"," +
-                "\"ZYCYRYXX_WH#ZYCYRYDJ_YCJJZGZSH_WH\":\"2020-05-22 10:05:27\",\"self" +
-                ".ZYCYRYXX_WH\":\"2020-11-26 16:29:48\",\"ZYCYRYXX_WH#ZYCYRYDJXM_WH\":\"2020-05-22 " +
-                "10:05:27\",\"ZYCYRYXX_WH#ZYCYRYDJSFZH_WH\":\"2020-05-22 10:05:27\",\"self" +
-                ".YYQX43\":\"2020-11-26 16:33:35\"},\"cardPropertyFeature\":{\"self" +
-                ".ZYCYRYXX_WH\":{\"ZYCYRYDJZW_WH\":\"isUniqueIndex:false\"," +
-                "\"ZYCYRYDJSFZH_WH\":\"isUniqueIndex:false\"," +
-                "\"ZYCYRYDJXB_WH\":\"isUniqueIndex:false\",\"ZYCYRYDJXM_WH\":\"isUniqueIndex:false\"," +
-                "\"ZYCYRYDJ_YCJJZGZSH_WH\":\"isUniqueIndex:false\"}},\"mergedTemplateCode\":{}}," +
+        String str1 = "'{\"_form\":{\"matterPropertyUpdateTimeDesc\":\"事项属性本身的更新时间，key为属性id，value为更新时间\"," +
+                "\"matterPropertyUpdateTime\":{\"self.SJRLXFS\":\"2020-10-16 17:51:46\",\"self" +
+                ".XZSBDD\":\"2020-11-05 18:07:28\",\"self.WJWJBR\":\"2020-11-09 09:22:12\",\"self" +
+                ".SJRXM\":\"2020-10-16 17:51:46\",\"self.WTR\":\"2020-10-16 17:51:46\",\"self" +
+                ".SZQY86\":\"2020-10-27 15:50:48\",\"self.SQDWMC\":\"2020-10-16 17:51:46\",\"self" +
+                ".SQRXM40\":\"2020-10-16 17:51:46\",\"self.XXDZ\":\"2020-10-16 17:51:46\",\"self" +
+                ".JBRYDDH\":\"2020-11-06 16:08:32\",\"self.SYCSDSDX\":\"2020-10-16 17:51:46\",\"self" +
+                ".BGDZ\":\"2020-10-16 17:51:46\",\"self.Mailing_add\":\"2020-10-16 17:51:46\",\"self" +
+                ".YXZH\":\"2020-10-16 17:51:46\",\"self.XB3\":\"2020-11-05 18:07:28\",\"self" +
+                ".BZ\":\"2020-10-16 17:51:47\",\"self.SXDAMC\":\"2020-10-16 17:51:47\",\"self" +
+                ".DAHQFS\":\"2020-10-16 17:51:46\",\"self.YSYCDGX\":\"2020-11-05 18:07:28\",\"self" +
+                ".ZJHM\":\"2020-10-20 10:19:18\",\"self.SFWBRBL\":\"2020-11-05 18:07:28\",\"self" +
+                ".XMMC17\":\"2020-10-16 17:51:46\",\"self.SZJZZCS\":\"2020-10-16 17:51:47\",\"self" +
+                ".GHXKZ\":\"2020-10-16 17:51:47\",\"self.TYSHXYDM\":\"2020-10-16 17:51:47\",\"self" +
+                ".SSHM\":\"2020-10-16 17:51:46\",\"self.KMMC\":\"2020-10-16 17:51:46\",\"self" +
+                ".JSDWMC\":\"2020-10-16 17:51:46\",\"self.SMHWTRSFZHYXZJHM\":\"2020-10-16 17:51:46\"," +
+                "\"self.LYMD90\":\"2020-10-16 17:51:46\",\"self.WTRLXDH\":\"2020-10-16 17:51:47\"," +
+                "\"self.YMMC\":\"2020-11-05 18:07:28\",\"self.CDBLDX\":\"2020-11-05 18:07:28\"}," +
+                "\"cardPropertyFeature\":{},\"propertyTemplate\":{},\"mergedTemplateCode\":{}}," +
                 "\"schemaType\":\"superform\",\"schemaVersion\":\"1.0\"," +
                 "\"rules\":[{\"condition\":\"${self.DAHQFS}.value.value == \\'zq\\'\"," +
                 "\"event\":\"${self.DAHQFS}:change\",\"target\":{\"self" +
