@@ -44,7 +44,10 @@ public class CollectionDemo {
         System.out.println();
         for(String li: list){
             String str = li;
-            System.out.print(str + " ");
+            System.out.print(str + "\n");
+        }
+        for (int i = 0; i <= 10; i++) {
+            if (i==10){System.out.print("-\n");}else{System.out.print("-");};
         }
     }
 
@@ -56,12 +59,12 @@ public class CollectionDemo {
         }
         System.out.println(Collections.min(set));
         System.out.println(Collections.min(set, String.CASE_INSENSITIVE_ORDER));
-        for (int i = 0; i <= 10; i++) {
-            System.out.print("-");
-        }
         System.out.println("");
         System.out.println(Collections.max(set));
         System.out.println(Collections.max(set, String.CASE_INSENSITIVE_ORDER));
+        for (int i = 0; i <= 10; i++) {
+            if (i==10){System.out.print("-\n");}else{System.out.print("-");};
+        }
     }
 
     public void traversal (){
@@ -74,6 +77,9 @@ public class CollectionDemo {
         Iterator itr = cl.iterator();
         while (itr.hasNext()) {
             System.out.println(itr.next());
+        }
+        for (int i = 0; i <= 10; i++) {
+            if (i==10){System.out.print("-\n");}else{System.out.print("-");};
         }
     }
 
@@ -102,6 +108,9 @@ public class CollectionDemo {
             System.out.println( "集合长度: " + size);
         }
         System.out.println();
+        for (int i = 0; i <= 10; i++) {
+            if (i==10){System.out.print("-\n");}else{System.out.print("-");};
+        }
     }
 
     public  void  shuffle(){
@@ -115,6 +124,9 @@ public class CollectionDemo {
             System.out.println("第" + i + "次打乱：");
             Collections.shuffle(lists);
             System.out.println(lists);
+        }
+        for (int i = 0; i <= 10; i++) {
+            if (i==10){System.out.print("-\n");}else{System.out.print("-");};
         }
     }
 
@@ -133,6 +145,9 @@ public class CollectionDemo {
         while (liter.hasNext()){
             System.out.println(liter.next());
         }
+        for (int i = 0; i <= 10; i++) {
+            if (i==10){System.out.print("-\n");}else{System.out.print("-");};
+        }
     }
 
     public void  specifyTheDelete(){
@@ -148,6 +163,9 @@ public class CollectionDemo {
         while (iter.hasNext()){
             System.out.println(iter.next() +  " ");
         }
+        for (int i = 0; i <= 10; i++) {
+            if (i==10){System.out.print("-\n");}else{System.out.print("-");};
+        }
     }
 
     public void readOnly(){
@@ -158,6 +176,9 @@ public class CollectionDemo {
             list.set(0,"c");
             System.out.println(list);
         }catch (Exception e){
+        }
+        for (int i = 0; i <= 10; i++) {
+            if (i==10){System.out.print("-\n");}else{System.out.print("-");};
         }
     }
 
@@ -172,6 +193,9 @@ public class CollectionDemo {
         System.out.println("tMapKeyRemove:" + treeMap.remove(treeMap.firstKey()));
         System.out.println("tMapKey:" + treeMap.keySet());
         System.out.println("tMapKeyError:" + treeMap.get(5));
+        for (int i = 0; i <= 10; i++) {
+            if (i==10){System.out.print("-\n");}else{System.out.print("-");};
+        }
     }
 
     public  void  listToArray (){
@@ -184,12 +208,18 @@ public class CollectionDemo {
         for (int i = 0; i < str.length; i ++){
             System.out.println(str[i]);
         }
+        for (int i = 0; i <= 10; i++) {
+            if (i==10){System.out.print("-\n");}else{System.out.print("-");};
+        }
     }
     public  void rotate (){
         List list = Arrays.asList("one Two three Four five six".split(" "));
         System.out.println("List :"+list);
         Collections.rotate(list, 3);
         System.out.println("rotate: " + list);
+        for (int i = 0; i <= 10; i++) {
+            if (i==10){System.out.print("-\n");}else{System.out.print("-");};
+        }
     }
 
     public  void  selectMaxMin(){
@@ -197,6 +227,9 @@ public class CollectionDemo {
         System.out.println("list:" + list);
         System.out.println("max:" + Collections.max(list));
         System.out.println("min:" + Collections.min(list));
+        for (int i = 0; i <= 10; i++) {
+            if (i==10){System.out.print("-\n");}else{System.out.print("-");};
+        }
     }
     public  void  traverse(){
         Hashtable htb = new Hashtable();
@@ -212,6 +245,9 @@ public class CollectionDemo {
         Iterator liter = c.iterator();
         while (liter.hasNext()){
             System.out.println(liter.next());
+        }
+        for (int i = 0; i <= 10; i++) {
+            if (i==10){System.out.print("-\n");}else{System.out.print("-");};
         }
     }
 }

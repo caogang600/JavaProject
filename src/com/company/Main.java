@@ -19,10 +19,10 @@ public class Main {
         //
         //集合相关
         //测试3
-//        CollectionDemo collection = new CollectionDemo();
-//        collection.runCollection();
+        CollectionDemo collection = new CollectionDemo();
+        collection.runCollection();
         //网络实例
-        NetworkDemo network = new NetworkImpl();
+//        NetworkDemo network = new NetworkImpl();
 //        network.getHostIp();
 //       network.getHostNewIp();
 //       network.getFileSize();
