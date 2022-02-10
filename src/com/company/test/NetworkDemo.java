@@ -10,5 +10,5 @@ public interface NetworkDemo {
     public void catchWebView() throws Exception;
     public void getURLConnection() throws Exception;
     public void createServiceSocket ();
-    public void createClientSocket ();
+    public void createClientSocket () throws IOException;
 }

@@ -93,7 +93,7 @@ public class NetworkImpl implements NetworkDemo {
     }
 
     @Override
-    public void createClientSocket() {
+    public void createClientSocket() throws IOException {
         try {
             Socket s = new Socket("172.23.61.71",8888);
             //构建IO

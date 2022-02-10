@@ -5,8 +5,10 @@ import com.company.datastructure.DataListDemo;
 import com.company.test.CollectionDemo;
 import com.company.test.NetworkDemo;
 import com.company.test.NetworkImpl;
+import com.company.test.ResponseMsg;
 import com.company.threadDemo.*;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.Socket;
@@ -18,9 +20,8 @@ public class Main {
     public static void main(String[] args)  throws Exception{
         //
         //集合相关
-        //测试3
-        CollectionDemo collection = new CollectionDemo();
-        collection.runCollection();
+//        CollectionDemo collection = new CollectionDemo();
+//        collection.runCollection();
         //网络实例
 //        NetworkDemo network = new NetworkImpl();
 //        network.getHostIp();
